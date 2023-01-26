@@ -1,6 +1,6 @@
 ---
-name: maru
-avatar: https://alist.kurisu.tk/d/Onedrive%20-%20A1/Web%20Source/ico.jpeg?sign=DRkIOZNd5QWzT1KdpoYDcUNp0yNsQ5e7QVLYAknw0tY=:0
+name: Maru
+avatar: /static/images/ico.jpeg
 occupation: Student
 company: Maru
 email: address@yoursite.com
