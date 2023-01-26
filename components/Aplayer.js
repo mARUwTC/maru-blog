@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactAplayer from 'react-aplayer';
 
-export default class Aplayer extends React.Component {
+class Player extends React.Component {
   // event binding example
   onPlay = () => {
     console.log('on play');
@@ -46,3 +46,5 @@ export default class Aplayer extends React.Component {
     );
   }
 }
+
+export default Player;

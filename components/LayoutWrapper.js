@@ -4,6 +4,7 @@ import Logo from '@/data/logo.svg'
 import Link from './Link'
 import SectionContainer from './SectionContainer'
 import Footer from './Footer'
+import Player from './Player'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 
@@ -45,6 +46,7 @@ const LayoutWrapper = ({ children }) => {
           </div>
         </header>
         <main className="mb-auto">{children}</main>
+        <Player />
         <Footer />
       </div>
     </SectionContainer>
