@@ -31,6 +31,9 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
         <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
           <header className="pt-6 xl:pb-6">
             <div className="space-y-1 text-center">
+              <div>
+                <PageTitle>{title}</PageTitle>
+              </div>
               <dl className="space-y-10">
                 <div>
                   <dt className="sr-only">Published on</dt>
@@ -41,9 +44,6 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   </dd>
                 </div>
               </dl>
-              <div>
-                <PageTitle>{title}</PageTitle>
-              </div>
             </div>
           </header>
           <div
