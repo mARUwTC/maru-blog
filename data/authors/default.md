@@ -2,7 +2,7 @@
 name: Maru
 avatar: /static/images/ico.jpeg
 occupation: Student
-company: Maru
+company: 
 email: address@yoursite.com
 twitter: https://twitter.com/Twitter
 linkedin: https://www.linkedin.com
