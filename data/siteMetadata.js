@@ -1,8 +1,8 @@
 const siteMetadata = {
   title: 'Maru Blog',
   author: 'Maru',
-  headerTitle: 'MaruBlog',
-  description: 'A blog created with Next.js and Tailwind.css',
+  headerTitle: 'Maru Blog',
+  description: 'Welcome to Maru Blog!',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://www.kurisu.tk',
