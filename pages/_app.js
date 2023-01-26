@@ -34,6 +34,7 @@ export default function App({ Component, pageProps, router }) {
       router.events.off("routeChangeError", handleRouteDone);
     };
   }, []);
+
   return (
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
       <Head>
