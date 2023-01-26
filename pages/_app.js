@@ -13,17 +13,22 @@ import LayoutWrapper from '@/components/LayoutWrapper'
 import { ClientReload } from '@/components/ClientReload'
 
 import NProgress from 'nprogress'
+import { useRouter } from 'next/router';
 
 const isDevelopment = process.env.NODE_ENV === 'development'
 const isSocket = process.env.SOCKET
 
-Router.events.on("routeChangeStart", (url)=>{
-  Nprogress.start()
-})
+export function Loading() {
+	const router = useRouter();
 
-Router.events.on("routeChangeComplete", (url)=>{
-  Nprogress.done(false)
-});
+	router.events.on("routeChangeStart", (url)=>{
+	  NProgress.start()
+	})
+
+	router.events.on("routeChangeComplete", (url)=>{
+    NProgress.done(false)
+	});
+}
 
 export default function App({ Component, pageProps }) {
   return (
