@@ -23,10 +23,12 @@ module.exports = {
         12: '3rem',
         13: '3.25rem',
         14: '3.5rem',
+        77: '7rem',
       },
       fontFamily: {
         sans: ['"Maven Pro"', '"M PLUS Rounded 1c"', 'Ubuntu', ...defaultTheme.fontFamily.sans],
-        mono: ['"Overpass Mono"',...defaultTheme.fontFamily.mono],
+        mono: ['"Overpass Mono"', ...defaultTheme.fontFamily.mono],
+        kbd: ['"Overpass Mono"', ...defaultTheme.fontFamily.mono],
       },
       colors: {
         primary: colors.sky,
