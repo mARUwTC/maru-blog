@@ -6,6 +6,8 @@ import siteMetadata from '@/data/siteMetadata'
 import formatDate from '@/lib/utils/formatDate'
 import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
+import React from 'react'
+import Breadcrumbs from 'nextjs-breadcrumbs'
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
   const { date, title } = frontMatter
@@ -21,6 +23,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               <div>
                 <PageTitle>{title}</PageTitle>
               </div>
+              <Breadcrumbs useDefaultStyle rootLabel="Home" />
               <dl>
                 <div>
                   <dt className="sr-only">Published on</dt>

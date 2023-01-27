@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html {
-    font-family: Ubuntu, system-ui, sans-serif;
-  }
-}
-
 .task-list-item::before {
   @apply hidden;
 }
@@ -17,7 +11,7 @@
 }
 
 .footnotes {
-  @apply pt-8 mt-12 border-t border-gray-200 dark:border-gray-700;
+  @apply mt-12 border-t border-gray-200 pt-8 dark:border-gray-700;
 }
 
 .csl-entry {
@@ -28,4 +22,29 @@
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+table {
+  @apply max-w-fit;
+}
+
+kbd {
+  @apply inline-block rounded-md border-solid border-slate-300 bg-slate-200 py-2 px-3 align-middle text-xs leading-none text-slate-100 shadow-md;
+}
+
+grammer {
+  @apply ml-4 mt-5 mb-3 inline-block rounded border-2 border-dashed border-slate-500 bg-slate-700 p-2 p-5 text-base text-slate-300;
+  box-shadow: 0 0 0 6px #343f5a, -2px 2px 5px 7px #343f5a;
+}
+
+._2jvtI li {
+  @apply inline text-xs;
+}
+
+._2jvtI li::after {
+  content: ' > ';
+}
+
+._2jvtI li:last-child::after {
+  content: '';
 }

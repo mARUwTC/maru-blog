@@ -12,36 +12,31 @@ import Analytics from '@/components/analytics'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import { ClientReload } from '@/components/ClientReload'
 
-import * as React from "react";
-import NProgress from "nprogress";
+import "nprogress/nprogress.css";
+import dynamic from 'next/dynamic'
 
 const isDevelopment = process.env.NODE_ENV === 'development'
 const isSocket = process.env.SOCKET
 
-export default function App({ Component, pageProps, router }) {
-  React.useEffect(() => {
-    const handleRouteStart = () => NProgress.start();
-    const handleRouteDone = () => NProgress.done();
- 
-    router.events.on("routeChangeStart", handleRouteStart);
-    router.events.on("routeChangeComplete", handleRouteDone);
-    router.events.on("routeChangeError", handleRouteDone);
- 
-    return () => {
-      // Make sure to remove the event handler on unmount!
-      router.events.off("routeChangeStart", handleRouteStart);
-      router.events.off("routeChangeComplete", handleRouteDone);
-      router.events.off("routeChangeError", handleRouteDone);
-    };
-  }, []);
+const TopProgressBar = dynamic(
+  () => {
+    return import("components/TopProgressBar");
+  },
+  { ssr: false },
+);
 
+export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet"></link>
       </Head>
       {isDevelopment && isSocket && <ClientReload />}
       <Analytics />
+      <TopProgressBar />
       <LayoutWrapper>
         <Component {...pageProps} />
       </LayoutWrapper>

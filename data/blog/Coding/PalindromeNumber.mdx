@@ -7,8 +7,10 @@ summary: 'A palindromic number (also known as a numeral palindrome or a numeric 
 layout: PostSimple
 ---
 
+<TOCInline toc={props.toc} asDisclosure />
+
 ## Approach 1: StringBuilder.reverse()
-```java
+```java:StringBuilder.reverse()
 class Solution {
     public boolean isPalindrome(int x) {
         return String.valueOf(x).equals(new StringBuilder(String.valueOf(x)).reverse().toString());
@@ -28,7 +30,7 @@ Now the question is, how do we know that we’ve reached the half of the number?
 
 Since we divided the number by 10, and multiplied the reversed number by 10, when the original number is less than the reversed number, it means we’ve processed half of the number digits.
 
-```java
+```java:Revert-half-of-the-number
 public class Solution {
     public bool IsPalindrome(int x) {
         // Special cases:
