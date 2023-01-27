@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html {
-    font-family: Ubuntu, system-ui, sans-serif;
-  }
-}
-
 .task-list-item::before {
   @apply hidden;
 }

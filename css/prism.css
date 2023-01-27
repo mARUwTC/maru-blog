@@ -49,7 +49,7 @@ pre{
 }
 
 .code-line::before {
-  @apply border-solid border-r inline-block mr-2 pr-4 w-8;
+  @apply border-solid border-r inline-block text-right mr-3 pr-3 w-7;
   content: counter(line);
   border-color: rgba(221, 221, 221, 1);
   color: rgba(136, 136, 136, 1);
