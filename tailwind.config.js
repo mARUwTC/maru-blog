@@ -26,6 +26,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Ubuntu', ...defaultTheme.fontFamily.sans],
+        'code-line': ['"Overpass Mono"',...defaultTheme.fontFamily.mono],
       },
       colors: {
         primary: colors.sky,
