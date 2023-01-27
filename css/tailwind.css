@@ -56,3 +56,18 @@ grammer p {
 summary {
   @apply cursor-pointer select-none;
 }
+
+note {
+  @apply bg-slate-700 text-slate-300 pt-4 px-8 pb-1 block mx-5 mt-10 mb-6 relative border-2 border-dashed border-slate-500 max-w-xs;
+  border-radius: 3em 0.8em 3em 0.7em/0.9em 2em 0.8em 3em;
+  box-shadow: 0 0 0 6px #343f5a, -2px 2px 5px 7px #343f5a, 0 2px 2px #ccc;
+}
+
+note::before {
+  @apply bg-gray-300 text-gray-700 font-bold border-black border-dotted border-r-2 border-l-2 py-1 px-5 absolute;
+  content: 'ポイント';
+  top: -20px;
+  left: 20px;
+  box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+  transform: rotate(-5deg);
+}
