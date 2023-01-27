@@ -23,7 +23,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               <div>
                 <PageTitle>{title}</PageTitle>
               </div>
-              <Breadcrumbs useDefaultStyle rootLabel="Home" />
+              <Breadcrumbs useDefaultStyle rootLabel="Home" labelsToUppercase="true" />
               <dl>
                 <div>
                   <dt className="sr-only">Published on</dt>
