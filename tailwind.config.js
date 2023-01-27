@@ -25,8 +25,7 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        // sans: ['Ubuntu', ...defaultTheme.fontFamily.sans],
-        sans: ['"Kosugi Maru"', ...defaultTheme.fontFamily.sans],
+        sans: ['"Maven Pro"', 'Ubuntu', ...defaultTheme.fontFamily.sans],
         mono: ['"Overpass Mono"',...defaultTheme.fontFamily.mono],
       },
       colors: {
