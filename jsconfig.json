@@ -8,5 +8,12 @@
       "@/lib/*": ["lib/*"],
       "@/css/*": ["css/*"]
     }
+  },
+  "mdx": {
+    "plugins": [
+      [
+        "remark-toc",
+      ],
+    ]
   }
 }
