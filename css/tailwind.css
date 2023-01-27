@@ -42,7 +42,7 @@ grammer p {
 }
 
 ._2jvtI li {
-  @apply inline text-xs;
+  @apply inline text-xs select-none;
 }
 
 ._2jvtI li::after {
