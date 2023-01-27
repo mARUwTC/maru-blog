@@ -63,7 +63,7 @@ const Pre = (props) => {
         </button>
       )}
 
-      <pre className="line-number">{props.children}</pre>
+      <pre>{props.children}</pre>
     </div>
   )
 }
