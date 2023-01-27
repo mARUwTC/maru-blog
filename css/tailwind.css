@@ -38,7 +38,7 @@ grammer {
 }
 
 ._2jvtI li {
-  @apply inline;
+  @apply inline text-xs;
 }
 
 ._2jvtI li::after {
