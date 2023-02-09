@@ -18,7 +18,7 @@ const Gallery = ({ images }) => {
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-      {images.map(image => (
+      {images && images.map(image => (
         <div
           key={image.id}
           className="cursor-pointer p-4 overflow-hidden relative"
