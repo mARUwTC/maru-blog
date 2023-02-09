@@ -4,6 +4,9 @@ import ImageMagnify from "react-image-magnify";
 import image1Before from "../../data/gallery/IMG_4341_before.jpg";
 import image1After from "../../data/gallery/IMG_4341_after.jpg";
 
+console.log("image1Before:", image1Before);
+console.log("image1After:", image1After);
+
 const images = [
   {
     id: 1,
