@@ -4,9 +4,6 @@ import ImageMagnify from "react-image-magnify";
 import image1Before from "../../data/gallery/IMG_4341_before.jpg";
 import image1After from "../../data/gallery/IMG_4341_after.jpg";
 
-console.log("image1Before:", image1Before);
-console.log("image1After:", image1After);
-
 const images = [
   {
     id: 1,
@@ -16,12 +13,12 @@ const images = [
   }
 ];
 
-const Gallery = ({ images }) => {
+const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-      {images && images.map(image => (
+      {images.map(image => (
         <div
           key={image.id}
           className="cursor-pointer p-4 overflow-hidden relative"
