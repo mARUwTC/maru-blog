@@ -7,10 +7,13 @@ summary: 'I had an end user that wanted to install their home printer drivers on
 layout: PostSimple
 ---
 
-* Open a command prompt with your credentials (Run As).
-* Run this command:
+I had an end user that wanted to install their home printer drivers on their office laptop.  I took remote control of their PC, but to my chagrin the user lacked admin rights to install the printer.  Here’s how to launch the add printer wizard using your (admin) credentials.
 
-```rundll32 printui.dll,PrintUIEntry /il```
+1. Open a command prompt with your credentials (Run As).
+2. Run this command:
+```powershell:Powershell
+rundll32 printui.dll,PrintUIEntry /il
+```
 
 The printer wizard will open with your credentials, saving you from having to log off.
 
