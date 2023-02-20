@@ -1,0 +1,17 @@
+---
+title: How to Run Add Printer Wizard as Admin in Windows
+date: '2023-02-20'
+tags: ['Windows']
+draft: false
+summary: 'I had an end user that wanted to install their home printer drivers on their office laptop.  I took remote control of their PC, but to my chagrin the user lacked admin rights to install the printer.  Here’s how to launch the add printer wizard using your (admin) credentials.'
+layout: PostSimple
+---
+
+* Open a command prompt with your credentials (Run As).
+* Run this command:
+
+```rundll32 printui.dll,PrintUIEntry /il```
+
+The printer wizard will open with your credentials, saving you from having to log off.
+
+Good luck!
