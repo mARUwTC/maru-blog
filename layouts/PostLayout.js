@@ -7,6 +7,7 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
+import Breadcrumbs from 'nextjs-breadcrumbs'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) =>
@@ -34,6 +35,12 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               <div>
                 <PageTitle>{title}</PageTitle>
               </div>
+              <Breadcrumbs
+                useDefaultStyle
+                rootLabel="HOME"
+                labelsToUppercase="true"
+                omitRootLabel="true"
+              />
               <dl className="space-y-10">
                 <div>
                   <dt className="sr-only">Published on</dt>
