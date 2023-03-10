@@ -6,16 +6,21 @@ draft: false
 summary: 'Using a proxy server as an internet access intermediary is a common business scenario. However, personal users can also benefit from increased network security, privacy, and speed provided by proxies.'
 layout: PostSimple
 ---
+
 ## Introduction
+
 Using a proxy server as an internet access intermediary is a common business scenario. However, personal users can also benefit from increased network security, privacy, and speed provided by proxies.
 
 ## Setting Up Proxy for APT
+
 1. To define proxy settings for apt, create or edit (if it already exists) a file named apt.conf in /etc/apt directory:
+
 ```shell
 sudo nano /etc/apt/apt.conf
 ```
 
 2. Add the following lines to the file:
+
 ```shell
 Acquire::http::Proxy "http://[username]:[password]@ [proxy-web-or-IP-address]:[port-number]";
 Acquire::https::Proxy "http://[username]:[password]@ [proxy-web-or-IP-address]:[port-number]";
@@ -24,4 +29,5 @@ Acquire::https::Proxy "http://[username]:[password]@ [proxy-web-or-IP-address]:[
 3. Save the file and exit. The configuration will be applied after a reboot.
 
 ## Conclusion
+
 This tutorial provided instructions on how to set up proxy settings on Ubuntu 20.04. You should now know how to make temporary and permanent changes to your system’s proxy configuration, for a single user or for the entire system.
