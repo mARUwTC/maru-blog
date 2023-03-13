@@ -8,22 +8,16 @@ layout: PostSimple
 ---
 
 ```
-nhkfw2 # diagnose sniffer packey any 'host xxx' 4
+nhkfw2 # diagnose sniffer packey any 'host 172.0.0.1' 4
 ```
 
 ```
 nhkfw2 # diagnose debug reset 
  
-nhkfw2 # diagnose debug flow filter addr 172.28.32.210
+nhkfw2 # diagnose debug flow filter addr 172.0.0.1
  
 nhkfw2 # diagnose debug flow show function-name enable 
 show function name
- 
-nhkfw2 # diagnose debug flow show iprope 
-do not show trace messages about iprope
- 
-nhkfw2 # diagnose debug flow show iprope
-do not show trace messages about iprope
  
 nhkfw2 # diagnose debug flow show iprope enable 
 show trace messages about iprope
